@@ -27,9 +27,7 @@
 ; update a user
 	;
 	set id=1
-	set ok=$$set^User(id,"John~password~John-Doe@no-reply.com~John Doe
-	;	
-	")
+	set ok=$$set^User(id,"John~password~John-Doe@no-reply.com~John Doe")
 	i ok=1 d
 	. write !,"User updated (",id,"):",!
 	. zwrite ^users(1)
